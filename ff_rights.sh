@@ -1,4 +1,6 @@
 #!/bin/sh
 
-find /dir_name -type d -exec chmod 755 {} \;
-find /dir_name -type f -exec chmod 644 {} \;
+# Execute in folder
+sudo find . -type f -exec chmod 644 {} +
+sudo find . -type d -exec chmod 755 {} +
+sudo chmod 600 wp-config.php
